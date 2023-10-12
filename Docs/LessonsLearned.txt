@@ -1,4 +1,6 @@
 JS is case sensitive
 
 use LivePreview to view HTML/CSS/JS with auto-refresh
+must start the server first
+
 
