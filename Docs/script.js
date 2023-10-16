@@ -15,6 +15,8 @@ canvas.height = window.innerHeight;
 // uncomment line 16 to view properties
 //console.log(ctx);
 
+// test to ensure canvas set up correctly
+// can be deleted afer modifying values and testing
 ctx.fillStyle = 'white';
 ctx.fillRect(250,150, 100, 200);
 
