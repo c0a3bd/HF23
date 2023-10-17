@@ -1,3 +1,8 @@
+// rename to just script.js if used
+// this script adds a connector line if particles are close enough
+// no external libraries used
+
+
 //// setup
 //Id defined in HTML file
 const canvas = document.getElementById('canvas1');
@@ -18,18 +23,18 @@ console.log(ctx);
 class Particle {
     constructor(effect){
         this.effect = effect;
-        this.radius = Math.random() * 20 + 2;
+        this.radius = Math.random() * 30 + 15;
         this.x = this.radius + Math.random() * (this.effect.width - this.radius * 2);
         this.y = this.radius + Math.random() * (this.effect.height - this.radius * 2);
-        this.vx = Math.random() * 3 - 2;  // defines the speed of movement L to R
-        this.vy = Math.random() * 3 - 2;  // defines the speed of movement U to D
+        this.vx = Math.random() * 4 - 2;  // defines the speed of movement L to R
+        this.vy = Math.random() * 4 - 2;  // defines the speed of movement U to D
     }
 
     draw(context){
 
         // sets the color of the color wheel from left to right
         // math tells it to vary color
-        context.fillStyle = 'hsl(' + this.x  + ', 100%, 50%)';
+        context.fillStyle = 'hsl(' + this.x * 1 + ', 100%, 50%)';
 
         // begin to draw
         context.beginPath();
@@ -77,7 +82,7 @@ class Effect {
         this.particles = [];
 
         // should be no less than 60 particles each creation
-        this.numberOfParticles = Math.random() + 100 - 5;  
+        this.numberOfParticles = Math.random() + 60 ;  
 
         // calls createParticles helper
         this.createParticles();
