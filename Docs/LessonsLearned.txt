@@ -2,5 +2,8 @@ JS is case sensitive
 
 use LivePreview to view HTML/CSS/JS with auto-refresh
 must start the server first
+**** be sure to use the correct live preview!!
 
 
+open file in browser and view console log for errors
+if seeing not defined, it usually means you're using/calling a variable before it was created
