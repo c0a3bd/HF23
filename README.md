@@ -15,3 +15,6 @@ The goal this year is to learn JavaScript and Particle Systems.
 ## Open Source Tutorials
 
 * [Learn Creative Coding: Particle Systems](https://youtu.be/5dIbK0auaB8?si=kavw2eqHV0uWjUuz)
+
+## Preview
+![Project Preview](/Docs/Project_preview.png)
